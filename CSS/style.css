@@ -200,13 +200,10 @@ input[type=text]:focus {
 
 @media screen and (max-width: 600px) {
 
-  .section {
-    
-    width: auto;
-  }
-
   h1, h2 {
-    scale: 40%;
+    scale: 50%;
+    width: 200%;
+    text-align: center;
   }
 
   form {
