@@ -1,7 +1,7 @@
 function switch_theme(event) {
-  bodyEle = document.querySelector("body").classList;
-  bodyEle.toggle("light-theme");
-  bodyEle.toggle("dark-theme");
+  bodyClassList = document.querySelector("body").classList;
+  bodyClassList.toggle("light-theme");
+  bodyClassList.toggle("dark-theme");
 }
 
 let toggleButton = document.querySelector(".toggle");
