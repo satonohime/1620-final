@@ -1,21 +1,20 @@
 function switch_theme(event) {
-    bodyEle = document.querySelector('body').classList
-    bodyEle.toggle('light-theme')
-    bodyEle.toggle('dark-theme')
+  bodyEle = document.querySelector("body").classList;
+  bodyEle.toggle("light-theme");
+  bodyEle.toggle("dark-theme");
 }
 
-toggleButton = document.querySelector('.toggle')
+let toggleButton = document.querySelector(".toggle");
 
-toggleButton.addEventListener('click', switch_theme)
+toggleButton.addEventListener("click", switch_theme);
 
+document.querySelector("#frm-btn").addEventListener("click", (evt) => {
+  evt.preventDefault();
+  let obj = {};
 
-document.querySelector('#frm-btn').addEventListener('click', (evt) => {
-    evt.preventDefault()
-    let obj = {}
-    
-    obj.name = document.querySelector('#name').value
-    obj.email = document.querySelector('#email').value
-    obj.message = document.querySelector('#msg').value
+  obj.name = document.querySelector("#name").value;
+  obj.email = document.querySelector("#email").value;
+  obj.message = document.querySelector("#msg").value;
 
-    console.log(obj)
-})
+  console.log(obj);
+});
